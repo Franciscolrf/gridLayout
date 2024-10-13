@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(154, 224, 252);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family:system-ui;
+}
+
+.container {
+    background-color: rgb(196,235,250);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "aside content content"
+        "aside section section"
+        "footer footer footer";
+    gap: 12px;
+    padding: 10px;
+    width: 50%;
+}
+
+
+header {
+    height: 40px;
+    grid-area: header;
+    background-color: #03bfb1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #33c361;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #6edb6e;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main {
+    grid-area: content;
+    background-color: #0f98c6;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    grid-area: section;
+    background-color: #005b92;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #03bfb1;
+    text-align: center;
+    padding: 20px;
+}
+
+header, nav, aside, main, section, footer {
+    text-align: center;
+    font-size: 18px; 
+    color: white;
+}
+
